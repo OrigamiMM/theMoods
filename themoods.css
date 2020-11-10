@@ -1,0 +1,61 @@
+.background {
+  background-color: rgb(111, 199, 139);
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.title {
+  font-size: 70px;
+  font-family: Arial;
+  font-weight: bold;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.dot {
+  height: 25rem;
+  width: 25rem;
+  border: 50px solid;
+  border-color: rgb(69, 202, 255);
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 10%;
+}
+p {
+  font-family: Arial;
+  font-weight: bold;
+  color:rgb(13, 20, 8)
+}
+.textbox {
+  border-radius:10px;
+  border-color: rgb(69, 202, 255);
+}
+
+.username {
+  margin-top: 39%;
+}
+.password {
+  margin-top: 3%;
+}
+button{
+  padding: 10px 20px;
+  font-size: 12px;
+  text-align: center;
+  font-family: Arial;
+  outline: none;
+  color: white;
+  background-color: #00BFFF;
+  border-radius:10px;
+  margin: 0 auto;
+  margin-bottom: 3%;
+  border: none;
+}
+button:hover{
+  background-color: rgb(69, 156, 255);
+}
