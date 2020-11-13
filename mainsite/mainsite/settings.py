@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/3.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
-from autoslug import AutoSlugField
+#from autoslug import AutoSlugField
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,15 +31,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'users.apps.UsersConfig',
+    'feed.apps.FeedConfig',
     'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'users.apps.UsersConfig',
-    'feed.apps.FeedConfig',
+    'django.contrib.staticfiles'
 ]
 
 MIDDLEWARE = [
@@ -49,7 +49,9 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware', ] ROOT_URLCONF = 'mainsite.urls'
+    'django.middleware.clickjacking.XFrameOptionsMiddleware', ] 
+
+ROOT_URLCONF = 'mainsite.urls'
 
 TEMPLATES = [
     {
